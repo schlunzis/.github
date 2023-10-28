@@ -1,5 +1,5 @@
 # Schlunzis
-
+Sharp-minded Coders Handcrafting Limitless Untilities Named Ze Impressive Schwifty
 
 
 ## Logo Information
