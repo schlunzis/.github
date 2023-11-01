@@ -1,0 +1,16 @@
+name: Other Issue
+description: Submit an issue
+title: "[ISSUE]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the issue
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the problem?
+      description: Describe the issue.
+      placeholder: Description
+    validations:
+      required: true
