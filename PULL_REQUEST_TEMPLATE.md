@@ -1,11 +1,11 @@
-## What type of PR is this? (check all applicable)
+## What type of PR is this? (keep all applicable)
 
-- [ ] Refactor
-- [ ] Feature
-- [ ] Bug Fix
-- [ ] Optimization
-- [ ] Documentation Update
-- [ ] Tests
+- Refactor
+- Feature
+- Bug Fix
+- Optimization
+- Documentation Update
+- Tests
 
 ## Description
 
