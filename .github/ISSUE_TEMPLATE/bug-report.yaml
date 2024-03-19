@@ -12,8 +12,7 @@ body:
     attributes:
       label: What happened?
       description: Describe the bug.
-      placeholder: Description
-      value: "A bug happened!"
+      placeholder: I can not start the game.
     validations:
       required: true
   - type: textarea
@@ -21,8 +20,7 @@ body:
     attributes:
       label: Steps to reproduce
       description: List the steps to reproduce the bug.
-      placeholder: Steps
-      value: "1. Go to..."
+      placeholder: "1. Go to..."
     validations:
       required: true
   - type: textarea
@@ -30,8 +28,7 @@ body:
     attributes:
       label: Expected behaviour
       description: Describe the expected behaviour after the steps above.
-      placeholder: Expected behaviour
-      value: "It should work!"
+      placeholder: The game starts.
     validations:
       required: true
   - type: textarea
@@ -39,8 +36,7 @@ body:
     attributes:
       label: Actual behaviour
       description: Describe the actual behaviour after the steps above.
-      placeholder: Actual behaviour
-      value: "It does not work!"
+      placeholder: The game is crashing.
     validations:
       required: true
   - type: textarea
@@ -49,23 +45,19 @@ body:
       label: Further Information
       description: Do you have any further information?
       placeholder: Further Information
-      value: "nothing"
     validations:
-      required: true
-  - type: dropdown
+      required: false
+  - type: input
     id: version
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 0.0.1-SNAPSHOT
-      default: 0
+      label: Which version of our software are you running?
+      placeholder: e.g. X.X.X or X.X.X-xxxxx-XXXXXXXXXXXXXX
     validations:
       required: true
   - type: dropdown
     id: os
     attributes:
-      label: What OS are you using
+      label: Which OS are you using?
       multiple: false
       options:
         - Ubuntu
@@ -74,6 +66,18 @@ body:
         - Windows
         - MacOS
       default: 0
+  - type: dropdown
+    id: download
+    attributes:
+      label: How did you download the software?
+      options:
+        - from GitHub release
+        - apt
+        - nix
+        - built from source
+      default: 0
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
